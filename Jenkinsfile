@@ -6,14 +6,13 @@ pipeline {
 				echo "Build"
 			}
 		}
-	}
-	stages{
 		stage('Test') {
 			steps {
 				echo "Test"
 			}
 		}
 	}
+
 	post{
 		always{
 			echo "always"
